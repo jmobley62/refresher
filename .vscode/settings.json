@@ -1,0 +1,32 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "TestServer",
+      "database": "postgres",
+      "username": "postgres",
+      "password": "Bleach92Y!"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "TestServer2",
+      "database": "postgres",
+      "username": "postgres"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "TestServer3",
+      "database": "postgres",
+      "username": "postgres"
+    }
+  ]
+}
