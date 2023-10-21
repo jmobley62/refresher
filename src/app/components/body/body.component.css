@@ -1,0 +1,15 @@
+#main {
+    min-height: 88dvh;
+    /* border: 10px solid black; */
+    overflow: hidden;
+}
+
+#raised {
+    background-color: rgb(249, 184, 63);
+    box-shadow: 3px 6px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+#shield {
+    height: 400px;
+    width: 280px;
+}

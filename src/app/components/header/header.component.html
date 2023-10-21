@@ -1,0 +1,29 @@
+<mat-toolbar
+  class="flex justify-between"
+  [style.backgroundColor]="backgroundColor ? 'black' : 'green'"
+>
+  <img [src]="V2X" class="" />
+  <div>
+    <button mat-icon-button [matMenuTriggerFor]="home">
+      <mat-icon>home</mat-icon>
+    </button>
+    <mat-menu #home="matMenu">
+      <button mat-menu-item>Greenville Training</button>
+      <button mat-menu-item>AOR Deployment</button>
+    </mat-menu>
+    <button mat-icon-button [matMenuTriggerFor]="description">
+      <mat-icon>description</mat-icon>
+    </button>
+    <mat-menu #description="matMenu">
+      <button mat-menu-item>Vectrus</button>
+      <button mat-menu-item>Vertex</button>
+    </mat-menu>
+    <button mat-icon-button [matMenuTriggerFor]="contact">
+      <mat-icon>phone_in_talk</mat-icon>
+    </button>
+    <mat-menu #contact="matMenu">
+      <button mat-menu-item>Contact Us</button>
+      <button mat-menu-item>FAQ</button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
