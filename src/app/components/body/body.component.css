@@ -10,6 +10,18 @@
 }
 
 #shield {
-    height: 400px;
+    height: 175px;
     width: 280px;
+    animation: spin 4s linear infinite;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg); /* Initial rotation to ensure it starts from the front */
+}
+
+@keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
 }

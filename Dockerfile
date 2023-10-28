@@ -2,11 +2,9 @@
 FROM node:latest
 
 # Set the working directory to /app
-WORKDIR /app
+WORKDIR /app/
 
-
-# Install Angular CLI globally
-RUN npm install -g @angular/cli
+COPY /package*.json .
 
 # Install project dependencies
 RUN npm install

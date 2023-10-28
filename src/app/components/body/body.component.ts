@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class BodyComponent {
   spartan = "../../../assets/images/shield.png"
-  
+  V2X :string = "../../../assets/images/V2X.webp"
+
   sendUser(val: string) {
     const allowedDomains: string[] = ["@example.com", "@gmail.com", "@hotmail.com", "@yahoo.com"];
 
@@ -16,8 +17,8 @@ export class BodyComponent {
     }
 
     console.warn(val);
-  } 
+  }
 
-  
+
 
 }

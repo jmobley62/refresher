@@ -1,6 +1,6 @@
 <mat-toolbar
   class="flex justify-between"
-  [style.backgroundColor]="backgroundColor ? 'black' : 'green'"
+  [style.background-color]="backgroundColor ? 'black' : 'green'"
 >
   <img [src]="V2X" alt="V2X Logo" class="" />
   <div>
@@ -8,15 +8,27 @@
       <mat-icon>home</mat-icon>
     </button>
     <mat-menu #home="matMenu">
-      <button mat-menu-item>Greenville Training</button>
-      <button mat-menu-item>AOR Deployment</button>
+      <button
+        mat-menu-item
+        [style.background-color]="backgroundColor ? 'black' : 'green'"
+        [style.color]="backgroundColor ? 'white' : 'black'"
+      >
+        Greenville Training
+      </button>
+      <button
+        mat-menu-item
+        [style.background-color]="backgroundColor ? 'black' : 'green'"
+        [style.color]="backgroundColor ? 'white' : 'black'"
+      >
+        AOR Deployment
+      </button>
     </mat-menu>
     <button mat-icon-button [matMenuTriggerFor]="description">
       <mat-icon>description</mat-icon>
     </button>
     <mat-menu #description="matMenu">
-      <button mat-menu-item>Vectrus</button>
-      <button mat-menu-item>Vertex</button>
+      <button mat-menu-item (click)="navigateToVectrus()">Vectrus</button>
+      <button mat-menu-item (click)="navigateToVertex()">Vertex</button>
     </mat-menu>
     <button mat-icon-button [matMenuTriggerFor]="contact">
       <mat-icon>phone_in_talk</mat-icon>
