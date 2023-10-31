@@ -1,11 +1,25 @@
-img{
-    height: 40px;
+.V2X{
+    height: 70px;
+    width: 190px;
+    animation: spin 4s linear infinite;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg); /* Initial rotation to ensure it starts from the front */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+
 }
 
 mat-icon {
     color:white
 }
 
-mat-mdc-menu-content.ng-tns-c2786309385-0{
-    padding: 0px;
-}
+.mat-menu-content {
+    padding: 0 !important;
+  }

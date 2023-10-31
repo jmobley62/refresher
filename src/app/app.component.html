@@ -1,6 +1,9 @@
-<Navbar />
-<app-body />
-<app-footer />
+<app-splash-screen />
+<div id="app-content" class="hidden-content">
+  <Navbar />
+  <app-body />
+  <app-footer />
+</div>
 
 <style>
   :host {
@@ -11,6 +14,15 @@
 
   app-body {
     flex: 1 0 auto;
+  }
+
+  .hidden-content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .visible-content {
+    opacity: 1;
   }
 </style>
 

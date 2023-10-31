@@ -9,19 +9,48 @@
     box-shadow: 3px 6px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
+/* Spinning Logo */
 #shield {
-    height: 175px;
-    width: 280px;
-    animation: spin 4s linear infinite;
-    transform-style: preserve-3d;
-    transform: rotateY(0deg); /* Initial rotation to ensure it starts from the front */
+    height: 275px;
+    width: 380px;
+    /*animation: spin 4s linear infinite;*/
+    /*transform-style: preserve-3d;*/
+    /*transform: rotateY(0deg); !* Initial rotation to ensure it starts from the front *!*/
 }
 
-@keyframes spin {
-    0% {
-      transform: rotateY(0deg);
-    }
-    100% {
-      transform: rotateY(360deg);
-    }
+/*@keyframes spin {*/
+/*    0% {*/
+/*      transform: rotateY(0deg);*/
+/*    }*/
+/*    100% {*/
+/*      transform: rotateY(360deg);*/
+/*    }*/
+/*}*/
+
+/* Floating Text box */
+/* Floating Effect with Shadow */
+mat-form-field ,#raised {
+  transition: all 0.3s ease;
+  transform: translateY(0px);
+  animation: sway 2s infinite alternate;
 }
+
+mat-form-field, #raised:hover {
+  transform: translateY(-2px);
+}
+
+/* Sway Animation */
+@keyframes sway {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+

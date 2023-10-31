@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class BodyComponent {
   spartan = "../../../assets/images/shield.png"
-  V2X :string = "../../../assets/images/V2X.webp"
+  V2X = "../../../assets/images/ANF.png"
 
   sendUser(val: string) {
     const allowedDomains: string[] = ["@example.com", "@gmail.com", "@hotmail.com", "@yahoo.com"];

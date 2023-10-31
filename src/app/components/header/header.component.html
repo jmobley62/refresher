@@ -1,16 +1,16 @@
 <mat-toolbar
   class="flex justify-between"
-  [style.background-color]="backgroundColor ? 'black' : 'green'"
+  [style.backgroundColor]="backgroundColor ? 'black' : 'green'"
 >
-  <img [src]="V2X" alt="V2X Logo" class="" />
+  <img [src]="V2X" alt="V2X Logo" class="V2X" />
   <div>
-    <button mat-icon-button [matMenuTriggerFor]="home">
-      <mat-icon>home</mat-icon>
+    <button mat-icon-button [matMenuTriggerFor]="home" (click)="navigateToInstagram()">
+      <img [src]="Instagram" alt="Instagram Logo" class="" />
     </button>
     <mat-menu #home="matMenu">
       <button
         mat-menu-item
-        [style.background-color]="backgroundColor ? 'black' : 'green'"
+        [style.backgroundColor]="backgroundColor ? 'black' : 'green'"
         [style.color]="backgroundColor ? 'white' : 'black'"
       >
         Greenville Training
@@ -23,8 +23,8 @@
         AOR Deployment
       </button>
     </mat-menu>
-    <button mat-icon-button [matMenuTriggerFor]="description">
-      <mat-icon>description</mat-icon>
+    <button mat-icon-button [matMenuTriggerFor]="description" (click)="navigateToFacebook()" >
+      <img [src]="Facebook" alt="Facebook Logo" class="" />
     </button>
     <mat-menu #description="matMenu">
       <button mat-menu-item (click)="navigateToVectrus()">Vectrus</button>
