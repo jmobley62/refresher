@@ -10,6 +10,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from "@angular/material/card";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
+import { CardComponent } from './components/card/card.component';
+import { FishComponent } from './components/fish/fish.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { SplashScreenComponent } from './components/splash-screen/splash-screen.
     HeaderComponent,
     BodyComponent,
     FooterComponent,
-    SplashScreenComponent
+    SplashScreenComponent,
+    CardComponent,
+    FishComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +44,7 @@ import { SplashScreenComponent } from './components/splash-screen/splash-screen.
     MatFormFieldModule,
     MatInputModule,
     MatGridListModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

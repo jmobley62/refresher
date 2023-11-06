@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+
+$custom-app-primary: mat-palette($mat-grey);
+$custom-app-accent:  mat-palette($mat-grey, A200, A100, A400);
+$custom-app-warn:    mat-palette($mat-red);
+$custom-app-theme:   mat-light-theme($custom-app-primary, $custom-app-accent, $custom-app-warn);
+
+.mat-menu-panel {
+    background-color: black !important;
+}
+
+.mat-menu-item {
+    color: white !important;
+}
