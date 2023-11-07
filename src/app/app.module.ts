@@ -19,8 +19,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
-import { CardComponent } from './components/card/card.component';
 import { FishComponent } from './components/fish/fish.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +29,8 @@ import { FishComponent } from './components/fish/fish.component';
     BodyComponent,
     FooterComponent,
     SplashScreenComponent,
-    CardComponent,
     FishComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
